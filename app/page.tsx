@@ -15,13 +15,13 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col overflow-hidden bg-[#f3efe7]">
-      <header className="flex h-20 items-center justify-center">
-        <h1 className="text-sm tracking-[0.25em] text-neutral-600">
-          WORRY STONE
+      <header className="flex justify-center pt-14 pb-2">
+        <h1 className="text-sm tracking-[0.18em] text-neutral-600">
+          오늘도 동글동글 괜찮아
         </h1>
       </header>
 
-      <section className="flex-1">
+      <section className="flex-1 pt-6">
         <WorryStone2D selectedStone={selectedStone} />
       </section>
 
