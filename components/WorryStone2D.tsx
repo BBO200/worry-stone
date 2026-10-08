@@ -134,6 +134,8 @@ export default function WorryStone2D({
             alt={`${displayedStone} 워리스톤`}
             fill
             priority
+            loading="eager"
+            sizes="(max-width: 768px) 90vw, 380px"
             draggable={false}
             className="pointer-events-none object-contain"
           />

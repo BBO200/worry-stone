@@ -52,6 +52,7 @@ export default function Home() {
               <Image
                 src="/stones/tomato-final.png"
                 alt="토마토 스톤"
+                sizes="64px"
                 fill
                 className="object-contain"
               />
@@ -70,6 +71,7 @@ export default function Home() {
               <Image
                 src="/stones/turtle-final.png"
                 alt="거북이 스톤"
+                sizes="64px"
                 fill
                 className="object-contain"
               />
@@ -88,6 +90,7 @@ export default function Home() {
               <Image
                 src="/stones/star-final.png"
                 alt="별 스톤"
+                sizes="64px"
                 fill
                 className="object-contain"
               />
