@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-type StoneType = "tomato" | "turtle" | "star";
+type StoneType = "tomato" | "turtle" | "star" | "dalgona";
 
 type Props = {
   selectedStone: StoneType;
@@ -13,6 +13,7 @@ const stoneImages: Record<StoneType, string> = {
   tomato: "/stones/tomato-final.png",
   turtle: "/stones/turtle-final.png",
   star: "/stones/star-final.png",
+  dalgona: "/stones/dalgona-final.png",
 };
 
 export default function WorryStone2D({
@@ -146,14 +147,15 @@ export default function WorryStone2D({
               background: `
                 radial-gradient(
                   circle at ${motion.glowX}% ${motion.glowY}%,
-                  rgba(255,255,255,0.18) 0%,
-                  rgba(255,255,255,0.11) 18%,
-                  rgba(255,255,255,0.05) 35%,
-                  rgba(255,255,255,0) 60%
+                  rgba(255,255,255,0.34) 0%,
+                  rgba(255,255,255,0.22) 20%,
+                  rgba(255,255,255,0.10) 42%,
+                  rgba(255,255,255,0.03) 58%,
+                  rgba(255,255,255,0) 72%
                 )
               `,
               mixBlendMode: "screen",
-              opacity: isPressing ? 0.8 : 0.22,
+              opacity: isPressing ? 1 : 0.28,
               transition: isPressing
                 ? "opacity 150ms ease"
                 : "opacity 500ms ease",

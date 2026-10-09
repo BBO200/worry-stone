@@ -5,7 +5,7 @@ import Image from "next/image";
 import WorryStone2D from "@/components/WorryStone2D";
 import StoneComments from "@/components/StoneComments";
 
-type StoneType = "tomato" | "turtle" | "star";
+type StoneType = "tomato" | "turtle" | "star" | "dalgona";
 
 export default function Home() {
   const [selectedStone, setSelectedStone] =
@@ -52,8 +52,8 @@ export default function Home() {
               <Image
                 src="/stones/tomato-final.png"
                 alt="토마토 스톤"
-                sizes="64px"
                 fill
+                sizes="64px"
                 className="object-contain"
               />
             </div>
@@ -71,8 +71,8 @@ export default function Home() {
               <Image
                 src="/stones/turtle-final.png"
                 alt="거북이 스톤"
-                sizes="64px"
                 fill
+                sizes="64px"
                 className="object-contain"
               />
             </div>
@@ -90,8 +90,27 @@ export default function Home() {
               <Image
                 src="/stones/star-final.png"
                 alt="별 스톤"
-                sizes="64px"
                 fill
+                sizes="64px"
+                className="object-contain"
+              />
+            </div>
+          </button>
+
+          <button
+            onClick={() => setSelectedStone("dalgona")}
+            className={`transition-all duration-200 ${
+              selectedStone === "dalgona"
+                ? "scale-110 opacity-100"
+                : "scale-100 opacity-40"
+            }`}
+          >
+            <div className="relative h-16 w-16">
+              <Image
+                src="/stones/dalgona-final.png"
+                alt="달고나 스톤"
+                fill
+                sizes="64px"
                 className="object-contain"
               />
             </div>
